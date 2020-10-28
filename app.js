@@ -28,7 +28,6 @@ app.post('/add-user', (req, res, next) => {
   users.push({userName});
   console.log(users);
   res.redirect('/users');
-
 });
 
 /***************
