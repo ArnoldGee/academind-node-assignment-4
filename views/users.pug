@@ -1,0 +1,12 @@
+extends layouts/main-layout.pug 
+
+block content
+  h1 #{pageTitle}
+  if users.length > 0
+    ol
+      each user in users
+        li #{user.userName}
+  else
+    p.error Error: there are no users yet.
+  a(href="/") Add a new user
+  
