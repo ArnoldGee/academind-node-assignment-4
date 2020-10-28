@@ -1,0 +1,8 @@
+extends layouts/main-layout.pug
+
+block content
+  h1 #{pageTitle}
+  form(action="/add-user", method="post")
+    input(type="text", name="userName")
+    button(type="submit") Enter username
+  a(href="/users") See a list of all the users
